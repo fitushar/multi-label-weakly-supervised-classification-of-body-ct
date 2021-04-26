@@ -47,6 +47,7 @@ multiple organ systems and diseases.
 ### Results
 <img src="ReadMeFigure/result.png"  width="40%" height="40%"><img src="ReadMeFigure/Probabilities.png"  width="60%" height="60%">
 
+
 # Study Overview:
 This Study contains three main modules:
 
@@ -60,6 +61,11 @@ In this section, we describe and outline the development processes of our RBA.
 
 A radiology CT report contains a protocol, indication, technique, findings, and impression sections. RBA was limited to the findings section of the CT reports minimizing the influence of biasing information referenced in other sections and ensuring that the automated annotation reflected image information in the current exam (e.g., indication for the exam, patient history, technique factors, and comparison with priors). For example, the impression section could describe a diagnosis based on patient history that could not be made using solely image-based information.
 
+| ![report_text.PNG](ReadMeFigure/report_text.PNG) | 
+|:--:| 
+| *Representative example of a body CT radiology report within our dataset.* |
+
+
 We used a dictionary approach to develop RBAs to extract disease labels from radiology text reports. To select target disease and organ keywords for the RBA dictionary, we computed term frequency-inverse document frequency (TF-IDF) on the findings sections of a random batch of 3,500 radiology reports. A board-certified radiologist guided to define the TF-IDF terms into several categories, specifically: 
 * a) single-organ descriptors specific to each organ, e.g., pleural effusion or steatosis, 
 * b) multi-organ descriptors applicable to numerous organs, e.g., nodule or stone, 
@@ -67,7 +73,8 @@ We used a dictionary approach to develop RBAs to extract disease labels from rad
 * d) qualifier terms describing confounding conditions, e.g., however, OR 
 * e) normal terms suggesting normal anatomy in the absence of other diseases and abnormalities, e.g., unremarkable. 
 
-The figure below displays the dictionary terms and their descriptor type for each organ system. 
+The figure below displays the dictionary terms and their descriptor type for each organ system.
+<img src="ReadMeFigure/Dictionary.PNG"  width="80%" height="80%"> 
 
 Figure 4 displays an overview of the RBA’s flowchart and logic. Although a separate RBA was created for each organ system, the workflow was the same. After the dictionary was refined, report text was converted to lowercase, and each sentence was tokenized. In summary, the RBA was deployed on each sentence, and the number of potential diseases was counted first using the logic for the multi-organ descriptor and then the single-organ descriptor. If no potential disease labels were detected, then the normal descriptor logic was finally applied to verify normality. This process was repeated for each disease outcome allowing a report to be positive for one or more diseases or normal. Note that in this study an organ system was defined as normal not only by excluding the four diseases studied but also in the absence of dozens of abnormalities and diseases states that were not otherwise analyzed, as shown in Appendix 1. If the RBA failed to categorize the report definitively as positive for disease or normal (e.g., there was no mention of the organ system), then the report was labeled as uncertain and was not included in this study.
 
