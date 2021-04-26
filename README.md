@@ -353,11 +353,7 @@ VALIDATION_TF_RECORDS='/image_data/nobackup/Lung_CenterPatch_2mm_April20_P224/al
 ```
 
 <img src="ReadMeFigure/RBA_ACC_F1.PNG"  width="90%" height="90%">
+<img src="ReadMeFigure/result.png"  width="80%" height="80%">
 
-<img src="Evaluations/kidney_test_12_CT_CTDICY_TMP116624_4.png"  width="10%" height="10%">
-<img src="Evaluations/kidney_test_12_CT_CTDICY_TMP116624_4_pred_tensor.png"  width="10%" height="10%">
-<img src="Evaluations/Lung_CT_CTFKSC_TMP246569_9.png"  width="10%" height="10%">
-<img src="Evaluations/Lung_CT_CTFKSC_TMP246569_prd_tensor.png"  width="10%" height="10%">
-<img src="Evaluations/liver_test_616_CT_CTAHHF_TMP251669_3.png"  width="10%" height="10%">
-<img src="Evaluations/liver_test_616_CT_CTAHHF_TMP251669_3_prd_tensor.png"  width="10%" height="10%">
+
 
