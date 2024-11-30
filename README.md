@@ -4,8 +4,8 @@ A rule-based algorithm enabled automatic extraction of disease labels from tens 
 
 ### Citation
 ```ruby
-F. I. Tushar et al., "Classification of Multiple Diseases on Body CT Scans Using Weakly Supervised Deep Learning," Radiology: Artificial Intelligence, vol. 4, no. 1, p. e210026, 2022!
-
+F. I. Tushar et al., "Classification of Multiple Diseases on Body CT Scans Using Weakly Supervised Deep Learning,"
+Radiology: Artificial Intelligence, vol. 4, no. 1, p. e210026, 2022.
 ```
 
 
