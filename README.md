@@ -4,20 +4,10 @@ A rule-based algorithm enabled automatic extraction of disease labels from tens 
 
 ### Citation
 ```ruby
-@misc{tushar2020weakly,
-      title={Weakly Supervised Multi-Organ Multi-Disease Classification of Body CT Scans}, 
-      author={Fakrul Islam Tushar and Vincent M. D'Anniballe and Rui Hou and Maciej A. Mazurowski and Wanyi Fu and Ehsan Samei 
-      and Geoffrey D. Rubin and Joseph Y. Lo},
-      year={2020},
-      eprint={2008.01158},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+F. I. Tushar et al., "Classification of Multiple Diseases on Body CT Scans Using Weakly Supervised Deep Learning," Radiology: Artificial Intelligence, vol. 4, no. 1, p. e210026, 2022!
+
 ```
-```ruby
-Tushar, F.I., D'Anniballe, V.M., Hou, R., Mazurowski, M.A., Fu, W., Samei, E., Rubin, G.D., Lo, J.Y., 
-2020. Weakly Supervised Multi-Organ Multi-Disease Classification of Body CT Scans. arXiv preprint arXiv:2008.01158.
-```
+
 
 ### Abstract
 
