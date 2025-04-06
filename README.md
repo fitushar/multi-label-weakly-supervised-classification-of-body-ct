@@ -1,6 +1,6 @@
 # Multi-Disease Classification of 13,667 Body CT Scans Using Weakly Supervised Deep Learning
 
-A rule-based algorithm enabled automatic extraction of disease labels from tens of thousands of radiology reports. These weak labels were used to create deep learning models to classify multiple diseases for three different organ systems in body CT. This Repo contains the updated implementation of our paper **"Multi-Disease Classification of 13,667 Body CT ScansUsing Weakly-Supervised Deep Learning"** (Under-review). A pre-print is available: **"Weakly Supervised Multi-Organ Multi-Disease Classification of Body CT Scans"**:https://arxiv.org/abs/2008.01158.
+A rule-based algorithm enabled automatic extraction of disease labels from tens of thousands of radiology reports. These weak labels were used to create deep learning models to classify multiple diseases for three different organ systems in body CT. This Repo contains the updated implementation of our Radiology: Artificial Intelligence paper **"Multi-Disease Classification of 13,667 Body CT ScansUsing Weakly-Supervised Deep Learning"**
 
 ### Citation
 ```ruby
@@ -209,6 +209,8 @@ c) Now use this command to run the model
 ```
 
 # Classification Module :
+
+Model Weighg: [Zenodo](https://zenodo.org/records/15164122)
 
 Prior to classification, all CT volumes were resampled to voxels of size 2 mm x 2 mm x 2 mm via B-spline interpolations, clipped to intensity range (-1000, 800) HU for lungs/pleura, (-200, 500) HU for liver/gallbladder and kidneys/ureters, and normalized to 0 mean and 1 standard-deviation. For each organ, the CT volumes were randomly divided into subsets to train (70%), validate (15%), and test (15%) the model. Splitting was performed by subject and separately for normal vs. diseased classes per organ to preserve disease prevalence across each subset.
 
